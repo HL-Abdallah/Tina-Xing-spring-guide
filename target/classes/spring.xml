@@ -4,6 +4,7 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="emailService" class="chatApp.EmailService"></bean>
+    <bean id="prototypeEmailService" class="chatApp.EmailService" scope="prototype"/>
+    <bean id="emailService" class="chatApp.EmailService" />
 
 </beans>
